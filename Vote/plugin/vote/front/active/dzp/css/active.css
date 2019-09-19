@@ -1,0 +1,447 @@
+@charset "UTF-8";
+html {
+    font-family: Arial, 'Microsoft Yahei', '微软雅黑';
+    font-size: 20px;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 0.8rem;
+    color: #212121;
+    background-color: #f5f5f5;
+    outline: 0;
+}
+
+html,
+body,
+header,
+section,
+footer,
+div,
+ul,
+ol,
+li,
+img,
+a,
+span,
+em,
+del,
+legend,
+center,
+strong,
+var,
+fieldset,
+form,
+label,
+dl,
+dt,
+dd,
+cite,
+input,
+hr,
+time,
+mark,
+code,
+figcaption,
+figure,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-style: normal;
+}
+
+@media only screen and (min-width: 400px) {
+    html {
+        font-size: 21.33333333px !important;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 21px !important;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    html {
+        font-size: 25.6px !important;
+    }
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 0.7rem;
+    color: #757575;
+}
+
+a {
+    color: #0062cc;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    outline: 0;
+}
+
+textarea {
+    overflow: hidden;
+    resize: none;
+}
+
+button {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+input,
+select,
+textarea {
+    /*   font: inherit;
+    color: inherit; */
+}
+
+/*文字、背景颜色*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+h3 {
+    font-size: 0.8rem;
+}
+
+h4 {
+    font-size: 0.7rem;
+}
+
+h5 {
+    font-size: 0.7rem;
+    font-weight: normal;
+    color: #757575;
+}
+
+h6 {
+    font-size: 0.7rem;
+    font-weight: normal;
+    color: #757575;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small {
+    font-weight: normal;
+    line-height: 1;
+    color: #757575;
+}
+
+h5 small,
+h6 small {
+    font-weight: normal;
+    line-height: 1;
+    color: #757575;
+}
+
+h1 small,
+h2 small,
+h3 small {
+    font-size: 65%;
+}
+
+h4 small,
+h5 small,
+h6 small {
+    font-size: 75%;
+}
+
+.none {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.game-change {
+    margin-bottom: 10px;
+    line-height: 45px;
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: #fff;
+}
+
+.game-change p {
+    text-align: center;
+}
+
+.game-change p span {
+    color: #d5471a;
+    padding: 0 2px;
+}
+
+.game-intro {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.game-intro .intro-part {
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.game-intro .intro-title {
+    font-size: 0.8rem;
+    color: #d5471a;
+    font-weight: bold;
+    background: url(../images/intro_ico.png) no-repeat 0 0.15em;
+    background-size: 1em;
+    padding-left: 1.2em;
+    margin-bottom: 10px;
+}
+
+.game-intro .active-intro .intro-title {
+    background-position: 0 -60px;
+}
+
+.game-intro .prize_list h4 {
+    color: green;
+    font-weight: bold;
+}
+
+.game-intro .prize_list li {
+    font-size: 0.7rem;
+    color: #18a689;
+}
+
+.game-intro .prize_list li span {
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.focus-wx {
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.focus-wx .tips-msg {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.focus-wx .tips-pic {
+    text-align: center;
+}
+
+.focus-wx .tips-pic img {
+    width: 200px;
+}
+
+#kq_dialog .kq_overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    filter: alpha(opacity=0);
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+}
+
+#kq_dialog .kq_dialog_box {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    width: 85%;
+    margin-left: -43%;
+    z-index: 9999;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #fff;
+}
+
+#kq_dialog .kq_dialog_box .kq_dialog_title {
+    font-weight: 400;
+    font-size: 17px;
+    padding: 20px 10px 0;
+    text-align: center;
+}
+
+#kq_dialog .kq_dialog_box .kq_dialog_cont {
+    padding: 20px 10px 0;
+}
+
+#kq_dialog .kq_dialog_box .kq_dialog_btn {
+    position: relative;
+    line-height: 42px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-top: 1px solid #D5D5D6;
+}
+
+#kq_dialog .kq_dialog_box .kq_dialog_btn a {
+    display: block;
+    text-align: center;
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    width: 50%;
+    color: #353535;
+    font-size: 16px;
+}
+
+#kq_dialog .kq_dialog_box .kq_dialog_btn a:after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    border-left: 1px solid #D5D5D6;
+    color: #D5D5D6;
+}
+
+#kq_dialog .kq_dialog_box .kq_dialog_btn.kq_dialog_btn:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+#kq_dialog .kq_dialog_box .kq_dialog_btn .kq_dialog-btn-ok {
+    color: #0BB20C;
+}
+
+.wx-push-user {
+    width: 100%;
+    z-index: 999999999;
+    position: relative;
+}
+
+.wx-push-user dl dd {
+    width: 100%;
+    border: 1px solid #D5D5D6;
+    height: 50px;
+    margin-bottom: 1%;
+}
+
+.wx-push-user dl dd input {
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    z-index: 999999999;
+    color: #000;
+    border: none;
+}
+
+.foot-btn-share {
+    margin-bottom: 35px;
+    margin-top: 40px;
+}
+
+.foot-btn-share ul li {
+    width: 50%;
+    float: left;
+    line-height: 40px;
+}
+
+.foot-btn-share ul li a {
+    display: block;
+    margin-right: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.6rem;
+    padding: 0 10px;
+}
+
+.foot-btn-share ul li a img {
+    height: 20px;
+    vertical-align: middle;
+    margin-top: 0px;
+    margin-right: 5px;
+}
+
+.foot-btn-share ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.share-wx-box {
+    display: none;
+}
+
+.share-wx-box .share-wx-bg {
+    background: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.share-wx-box .share-wx-ico {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999999999999;
+}
+
+.share-wx-box .share-wx-ico img {
+    max-width: 100%;
+}
+
+.foot-copyright {
+    text-align: center;
+    font-size: 0.6rem;
+    color: #fff;
+}
