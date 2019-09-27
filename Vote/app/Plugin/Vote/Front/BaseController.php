@@ -49,7 +49,7 @@ class BaseController extends FrontBaseController
             }
         }
         if ($this->isResponse) {
-            return response()->view('tips.tips', ['message' => $data]);
+            return response()->view('plugin.vote.tips.tips', ['message' => $data]);
         }
 
         return view('tips.tips', ['message' => $data]);

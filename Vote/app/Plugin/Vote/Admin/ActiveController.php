@@ -249,5 +249,9 @@ class ActiveController extends AdminCurlController
         ];
 
     }
+    public function setModelAddRelaction($model)
+    {
+        return $model->with('merchant');//关联商户
+    }
 
 }
